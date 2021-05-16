@@ -20,9 +20,9 @@ spring:
 # ===============================
 # Set here configurations for the database connection
   datasource:
-    url: jdbc:mysql://localhost:3306/dbcarritocompras
-    username: root
-    password: root
+    url: postgres://rlynjlrbeeqzbl:02f0c430232ff7f78df47d5e5cf064fe5f2267c3f3b19a8f291c5313788cc799@ec2-54-197-100-79.compute-1.amazonaws.com:5432/d8btal7g4edan7
+    username: rlynjlrbeeqzbl
+    password: 02f0c430232ff7f78df47d5e5cf064fe5f2267c3f3b19a8f291c5313788cc799
 #spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
 # Keep the connection alive if idle for a long time (needed in production)
@@ -48,7 +48,7 @@ spring:
 # Allows Hibernate to generate SQL optimized for a particular DBMS
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
 
 # ===============================
 # = Para visualizar la vista de spring cuando se produce un error (enabled=true)
